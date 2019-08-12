@@ -1,3 +1,460 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Home Page CSS Below */
+
+p {
+  line-height: 1.25;
+  margin: 20px 0;
+  font-family: "Arvo", sans-serif;
+}
+
+.container {
+  border: 1px solid black;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+@media() {
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+.navigation {
+  /* margin-left: 5%; */
+  margin-top: 0.3px;
+  padding: 1px;
+  position: fixed;
+  top: 0;
+  width: 69.9%;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 65px;
+  z-index: 1;
+}
+
+.navigation a {
+  /* margin: 25px; */
+  /* display: inline-block; */
+
+  color: grey;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: black;
+  transform: scale(1.5);
+  text-shadow: 1px 1px white;
+}
+
+.navigation .logo {
+  margin-left: 80px;
+}
+
+header img {
+  /* display: inline-block; */
+  margin-left: 5%;
+}
+
+.middle-img {
+  margin: 22px;
+}
+
+header {
+  border-bottom: 1px solid black;
+  padding-bottom: 5%;
+  margin: 5%;
+  display: flex;
+  margin-top: 150px;
+}
+
+.headText {
+  /* display: inline-block; */
+  height: 250px;
+  width: 45%;
+  font-size: 80px;
+  text-align: center;
+  padding: 0 50px;
+  margin-bottom: 80px;
+}
+
+.getStarted {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  /* display: inline-block; */
+  margin: 10px 0;
+  padding: 10px 50px;
+  border: 1px solid black;
+  cursor: pointer;
+  outline: 0;
+  border-radius: 5px;
+}
+
+.getStarted:focus {
+  background-color: dimgrey;
+  color: white;
+}
+
+.topContent {
+  margin-top: 15px;
+  margin-bottom: -20px;
+  margin-left: 4%;
+  display: flex;
+}
+
+.topText {
+  width: 45%;
+  margin: 20px 2%;
+  /* display: inline-block; */
+  vertical-align: bottom;
+}
+
+.middle-img {
+  margin-left: 3.5%;
+}
+
+.bottomContent {
+  margin-left: 5%;
+  margin-top: 1%;
+  display: flex;
+}
+
+.bottomText {
+  width: 32%;
+  /* display: inline-block; */
+}
+
+.contact {
+  margin: 5%;
+  border-top: 1px solid black;
+  padding-top: 3%;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+
+/* Services Page CSS Below */
+
+.services-header-img {
+  margin-top: 8%;
+  margin-left: 3%;
+}
+
+.services {
+  margin: 30px;
+  border-bottom: 1px solid black;
+  width: 93%;
+}
+
+.services h1 {
+  font-size: 30px;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  border: 1px solid black;
+  width: 420px;
+  height: 250px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #f4f3f4;
+  /* margin-bottom: -5px; */
+}
+
+.learnMore {
+  border: 1px solid black;
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.learnMore:focus {
+  background-color: dimgrey;
+  color: white;
+  outline: 0;
+}
+
+.sectionBottom {
+  margin: 30px;
+  border-top: 1.5px solid black;
+  width: 93%;
+  display: flex;
+  padding-top: 40px;
+}
+
+.divLeft {
+  justify-content: space-around;
+  /* padding: 25px; */
+  padding: 5px;
+}
+
+.divRight {
+  margin-left: 30px;
+}
+
+li {
+  margin: 15px 0px;
+}
+
+/* Contact page CSS below */
+
+.contactInfo {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.contactInfo h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+#yourName {
+  height: 40px;
+  width: 75%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  text-align: center;
+  background-color: #f4f3f4;
+  font-size: 20px;
+  font-family: "Blinker", "Sans-Serif";
+  opacity: 0.5;
+  resize: none;
+}
+
+#yourEmail {
+  height: 40px;
+  width: 75%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  text-align: center;
+  background-color: #f4f3f4;
+  font-size: 20px;
+  font-family: "Blinker", "Sans-Serif";
+  opacity: 0.5;
+  margin-top: 15px;
+  resize: none;
+}
+
+#yourMessage {
+  height: 200px;
+  width: 75%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  text-align: center;
+  background-color: #f4f3f4;
+  font-size: 20px;
+  font-family: "Blinker", "Sans-Serif";
+  opacity: 0.5;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+.submitContact {
+  border: 1px solid black;
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: #f4f3f4;
+  cursor: pointer;
+}
+
+.submitContact:focus {
+  background-color: dimgrey;
+  color: white;
+  outline: 0;
+}
+
+/* Other pages WIP CSS below */
+
+.wip {
+  margin-top: 15%;
+  text-align: center;
+}
+
+.wip h2 {
+  text-align: center;
+  font-size: 40px;
+}
