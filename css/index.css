@@ -1,4 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -163,24 +162,16 @@ p {
 
 .container {
   border: 1px solid black;
-  width: 70%;
+  max-width: 880px;
   margin: 0 auto;
 }
 
-/* -------------------------------------------------------------------------------------------------------------------------- */
-
-@media() {
-}
-
-/* -------------------------------------------------------------------------------------------------------------------------- */
-
 .navigation {
-  /* margin-left: 5%; */
   margin-top: 0.3px;
   padding: 1px;
   position: fixed;
   top: 0;
-  width: 69.9%;
+  width: 878px;
   background-color: gainsboro;
   display: flex;
   justify-content: space-around;
@@ -203,7 +194,7 @@ p {
   text-shadow: 1px 1px white;
 }
 
-.navigation .logo {
+.logo {
   margin-left: 80px;
 }
 
@@ -213,7 +204,7 @@ header img {
 }
 
 .middle-img {
-  margin: 22px;
+  width: 879px;
 }
 
 header {
@@ -230,7 +221,7 @@ header {
   width: 45%;
   font-size: 80px;
   text-align: center;
-  padding: 0 50px;
+  /* padding: 0 50px; */
   margin-bottom: 80px;
 }
 
@@ -266,9 +257,9 @@ header {
   vertical-align: bottom;
 }
 
-.middle-img {
+/* .middle-img {
   margin-left: 3.5%;
-}
+} */
 
 .bottomContent {
   margin-left: 5%;
@@ -297,8 +288,11 @@ footer {
 /* Services Page CSS Below */
 
 .services-header-img {
-  margin-top: 8%;
-  margin-left: 3%;
+  margin-top: 9%;
+  width: 95%;
+  margin-left: 2.5%;
+
+  /* margin-left: 3%; */
 }
 
 .services {
@@ -457,4 +451,115 @@ li {
 .wip h2 {
   text-align: center;
   font-size: 40px;
+}
+
+/* ---------------------------------------------------------------- 800 ----------------------------------------------------------- */
+
+@media (max-width: 800px) {
+  /* This is for the Index Page */
+  .navigation {
+    width: 797px;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    height: 100px;
+    padding-bottom: 2%;
+  }
+  .middle-img {
+    width: 800px;
+    padding: 2.5%;
+  }
+  .navigation .logo {
+    margin-left: 50%;
+    margin-top: 10%;
+    margin-right: 50%;
+    margin-bottom: 3%;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  header img {
+    display: none;
+  }
+  /* ----------------------------- */
+  /* This is for the Services Page */
+
+  /* ----------------------------- */
+}
+
+/* --------------------------------------------------------------- 500 ------------------------------------------------------------- */
+
+@media (max-width: 500px) {
+  /* This is for the Home Page */
+  .navigation {
+    max-width: 100%;
+    flex-direction: column;
+    height: 568px;
+    text-align: center;
+    position: relative;
+    padding: 0px;
+  }
+
+  .navigation .logo {
+    margin: 5% 0% 5% 2.5%;
+    order: -1;
+  }
+
+  .navigation a {
+    border-bottom: 1px solid dimgrey;
+    width: 100%;
+    padding: 4.85%;
+  }
+
+  .navigation a:hover {
+    color: none;
+    transform: none;
+    text-shadow: none;
+  }
+
+  .navigation a:first-child {
+    border-top: 1px solid dimgrey;
+  }
+
+  header img {
+    display: none;
+  }
+
+  .headText {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .middle-img {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 5%;
+  }
+
+  .topContent {
+    flex-direction: column;
+  }
+
+  .topText {
+    width: 95%;
+    margin-bottom: 10%;
+  }
+
+  .bottomContent {
+    flex-direction: column;
+  }
+
+  .bottomText {
+    width: 95%;
+    margin: 5% 0;
+  }
+
+  .contact {
+    padding-top: 10%;
+  }
+  /* ----------------------------- */
+  /* This is for the Services Page */
+
+  /* ----------------------------- */
 }
